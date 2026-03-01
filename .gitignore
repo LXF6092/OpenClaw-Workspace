@@ -1,0 +1,4 @@
+
+.openclaw_logs/
+.openclaw/
+memory/*.json
