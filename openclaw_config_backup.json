@@ -1,10 +1,10 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.2",
-    "lastTouchedAt": "2026-03-08T06:54:17.586Z"
+    "lastTouchedAt": "2026-03-09T01:54:13.582Z"
   },
   "wizard": {
-    "lastRunAt": "2026-03-07T05:31:28.062Z",
+    "lastRunAt": "2026-03-09T01:54:13.450Z",
     "lastRunVersion": "2026.3.2",
     "lastRunCommand": "doctor",
     "lastRunMode": "local"
@@ -25,7 +25,7 @@
     "providers": {
       "bailian": {
         "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
-        "apiKey": "sk-sp-0736e0eb7fdf4fad8702d8769f150603",
+        "apiKey": "sk-sp-352b72341744419185cdf5c50a1aebce",
         "api": "openai-completions",
         "models": [
           {
@@ -66,66 +66,29 @@
           }
         ]
       },
-      "gemini": {
-        "baseUrl": "https://generativelanguage.googleapis.com/v1beta/openai/",
-        "apiKey": "AIzaSyCQ7v8WQB7ylcXI36BS_N5VGaYXRgsMxJo",
+      "duojie": {
+        "baseUrl": "https://api.duojie.games/v1",
+        "apiKey": "sk-pK9hgBzISgQV9PKZHiTgG6ZAwDUo2bZ6lgTB5Q7XN7hFkN28",
         "api": "openai-completions",
         "models": [
           {
-            "id": "gemini-2.5-pro",
-            "name": "Gemini 2.5 Pro",
+            "id": "claude-opus-4-6-gemini",
+            "name": "Opus 4.6",
             "input": [
               "text",
               "image"
             ],
-            "contextWindow": 2097152,
+            "contextWindow": 200000,
             "maxTokens": 8192
           },
           {
-            "id": "gemini-2.0-flash",
-            "name": "Gemini 2.0 Flash",
+            "id": "claude-sonnet-4-6",
+            "name": "Sonnet 4.6",
             "input": [
               "text",
               "image"
             ],
-            "contextWindow": 1048576,
-            "maxTokens": 8192
-          },
-          {
-            "id": "gemini-1.5-pro",
-            "name": "Gemini 1.5 Pro",
-            "input": [
-              "text",
-              "image"
-            ],
-            "contextWindow": 2097152,
-            "maxTokens": 8192
-          }
-        ]
-      },
-      "antigravity": {
-        "baseUrl": "https://generativelanguage.googleapis.com/v1beta/openai/",
-        "apiKey": "AIzaSyCQ7v8WQB7ylcXI36BS_N5VGaYXRgsMxJo",
-        "api": "openai-completions",
-        "models": [
-          {
-            "id": "gemini-2.5-pro",
-            "name": "Gemini 2.5 Pro (Antigravity)",
-            "input": [
-              "text",
-              "image"
-            ],
-            "contextWindow": 2097152,
-            "maxTokens": 8192
-          },
-          {
-            "id": "gemini-2.0-flash",
-            "name": "Gemini 2.0 Flash (Antigravity)",
-            "input": [
-              "text",
-              "image"
-            ],
-            "contextWindow": 1048576,
+            "contextWindow": 200000,
             "maxTokens": 8192
           }
         ]
@@ -141,14 +104,8 @@
         "bailian/qwen3.5-plus": {},
         "qwen-portal/coder-model": {},
         "qwen-portal/vision-model": {},
-        "gemini/gemini-2.0-flash": {},
-        "gemini/gemini-1.5-pro": {},
-        "antigravity/gemini-3-pro": {},
-        "antigravity/gemini-3-pro-image": {},
-        "gemini/gemini-3.0-pro": {},
-        "gemini/gemini-3.0-flash": {},
-        "antigravity/gemini-3.0-pro": {},
-        "antigravity/gemini-3.0-flash": {}
+        "duojie/claude-opus-4-6-gemini": {},
+        "duojie/claude-sonnet-4-6": {}
       },
       "workspace": "C:\\Users\\Mac\\.openclaw\\workspace",
       "compaction": {
@@ -223,9 +180,6 @@
     "entries": {
       "qwen-portal-auth": {
         "enabled": true
-      },
-      "memory-lancedb-pro": {
-        "enabled": false
       },
       "feishu": {
         "enabled": true
